@@ -23,19 +23,33 @@ Para ejecutar correctamente el código, es necesario tener instaladas las siguie
 --------------------------------------------------
 
 import pandas as pd
+
 import matplotlib.pyplot as plt
+
 import numpy as np
+
 import seaborn as sns
+
 from sklearn.neighbors import NearestNeighbors, KNeighborsClassifier
+
 import sklearn.neighbors._base
+
 import sys
+
 sys.modules['sklearn.neighbors.base'] = sklearn.neighbors._base
+
 from missingpy import MissForest
+
 from sklearn.metrics import confusion_matrix, classification_report, mean_squared_error, ConfusionMatrixDisplay, accuracy_score, make_scorer, precision_score, recall_score, f1_score, roc_auc_score, roc_curve, auc
+
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate, KFold, RandomizedSearchCV
+
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler, label_binarize
+
 from sklearn.compose import ColumnTransformer
+
 from sklearn.tree import DecisionTreeClassifier
+
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
